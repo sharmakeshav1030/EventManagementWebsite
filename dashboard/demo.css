@@ -1,0 +1,16 @@
+body {
+    background: #F9F9F9 none repeat scroll 0% 0%;
+    color: #0E171C;
+    font: 300 100%/1.5em "Lato",sans-serif;
+    margin: 0px;
+}
+
+.title{
+    text-align: center;
+}
+
+.calendar-container{
+    position: relative;
+    margin: 50px auto;
+    max-width: 500px;
+}

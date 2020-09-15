@@ -1,0 +1,8 @@
+{
+    "botman/driver-config": [
+        "stubs/web.php"
+    ],
+    "botman/driver": [
+        "BotMan\\Drivers\\Web\\WebDriver"
+    ]
+}

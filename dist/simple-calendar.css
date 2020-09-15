@@ -1,0 +1,148 @@
+.calendar {
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  text-align: center;
+  font: 15px/1em inherit;
+  color: #545A5C; }
+  .calendar a {
+    text-decoration: none;
+    color: inherit; }
+  .calendar header .btn {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #CBD1D2;
+    border-radius: 50%;
+    border: 2px solid #CBD1D2; }
+  .calendar header .btn:hover {
+    background: #CBD1D2;
+    color: white; }
+  .calendar header .btn:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    transform: rotate(45deg);
+    transform-origin: center center; }
+  .calendar header .btn-prev {
+    top: 0;
+    left: 0;
+    transform: rotate(-180deg); }
+  .calendar header .btn-next {
+    top: 0;
+    right: 0; }
+    .calendar header .btn-next:before {
+      transform: rotate(45deg); }
+  .calendar header .month {
+    padding: 0;
+    margin: 0; }
+    .calendar header .month .year {
+      font-size: 0.6em;
+      font-weight: 100; }
+  .calendar table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 0px; }
+  .calendar thead {
+    font-size: 1.2em;
+    font-weight: 600; }
+  .calendar td {
+    padding: .0em .1em; }
+  .calendar .day {
+    position: relative;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer; }
+    .calendar .day:hover {
+      border: 2px solid #6691CC; }
+    .calendar .day.today {
+      background: #6691CC;
+      color: white; }
+      .calendar .day.today.has-event:after {
+        background: white; }
+    .calendar .day.wrong-month {
+      color: #CBD1D2; }
+    .calendar .day.wrong-month:hover {
+      border: 2px solid transparent; }
+    .calendar .day.has-event:after {
+      content: '';
+      position: absolute;
+      top: calc(50% + .6em);
+      left: calc(50% - 2px);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #6691CC; }
+    .calendar .day.disabled {
+      cursor: default; }
+      .calendar .day.disabled:hover {
+        border: 2px solid transparent; }
+  .calendar .event-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 00px;
+    background: #545A5C;
+    box-sizing: border-box; }
+    .calendar .event-container .event-wrapper {
+      overflow-y: auto;
+      max-height: 100%; }
+    .calendar .event-container .close {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; }
+      .calendar .event-container .close:before, .calendar .event-container .close:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background-color: #CBD1D2; }
+      .calendar .event-container .close:before {
+        transform: rotate(45deg); }
+      .calendar .event-container .close:after {
+        transform: rotate(-45deg); }
+    .calendar .event-container .event {
+      position: relative;
+      width: 100%;
+      padding: 0.5em;
+      margin-top:3.1em;
+      margin-bottom: 0em;
+      background: #6691CC;
+      border-radius: 4px;
+      box-sizing: border-box;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+      text-align: left;
+      color: white; }
+      .calendar .event-container .event-date {
+        margin-bottom: 1em; }
+      .calendar .event-container .event-hour {
+        float: right; }
+      .calendar .event-container .event-summary {
+        font-weight: 600; }
+  .calendar .filler {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #545A5C;
+    transform: translate(-50%, -50%); }

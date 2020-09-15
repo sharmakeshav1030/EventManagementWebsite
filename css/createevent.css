@@ -1,0 +1,140 @@
+input[type=text] , textarea{
+	
+    
+    
+    display:inline-block;
+    *display: inline;    
+    zoom:1;             
+    vertical-align:middle;
+    
+	
+	
+  
+  font-size: 1.2rem;
+	
+ 
+  border-radius: 0.2rem;
+ 
+
+  
+  width: 70%;
+  padding: 10px;
+  margin-left:10px;
+  
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+ 
+ 
+}
+
+
+
+
+label {
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    zoom:1;              /* for IE7*/
+    float: left;
+    padding-top: 10px;
+    text-align: right;
+    width: 140px;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 50px;
+  background-color: white;
+  
+  
+  
+ text-align:center;
+}
+
+/* Full-width input fields */
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+.yoyo1{
+	
+	             
+    
+    
+	
+	
+  
+
+ 
+ 
+
+  
+  width: 100%;
+ 
+  margin-left:70px;
+  
+  
+  border: none;
+  
+	
+}
+
+
+
+.yoyo{
+	
+	             
+   
+    
+	
+	
+   margin-left:70px;
+  
+	
+ 
+ 
+
+  
+  width: 100%;
+ 
+  
+  
+  
+  border: none;
+  
+	
+}
+    
+	 
+
+
+
+
+.rule{
+	margin-top:10px;
+	margin-left:700px;
+	
+}
+
+.prize{
+	margin-top:10px;
+	margin-left:700px;
+	
+}
+
+

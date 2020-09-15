@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.mmduevents",
+    "sha256_cert_fingerprints":
+    ["63:88:AC:BD:F6:C9:90:5B:60:04:CE:D7:0B:CB:4D:75:1A:64:67:34:34:E3:56:A3:80:0D:BD:5A:51:BE:A8:C5"]
+  }
+}]
